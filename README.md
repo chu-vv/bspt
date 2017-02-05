@@ -1,2 +1,12 @@
 # bspt
-Test excersise to the ETL/ML by V.Churuksaeva.
+Test excersise for the ETL/ML by V.Churuksaeva (chu.vv@mail.ru).
+
+
+Для запуска программы требуется скопировать файл скрипта sflow-analysis.py, файл с тестовым набором данных sflow-0118.csv, скрипт для запуска run.sh и GeoLite2-Country.mmdb - файл данных Geolite2 Country в папку и запустить run.sh.
+run.sh вызывает скрипт spark-submit для запуска python-скрипта. Параметры для конфигурации SparkContext передаются из командной строки. Стандартный поток вывода перенаправляется в tech_out.txt
+
+В результате работы программы формируются файлы:
+out.txt, содержащий сумму размеров пакетов для каждого ip адреса,
+out_count.txt - сумму размеров пакетов для каждой страны и
+countries.png – гистограмма, показывающая распределение трафики по странам.
+В файл tech_out.txt печатается время выполнения расчетов. 
