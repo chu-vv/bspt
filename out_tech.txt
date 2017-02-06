@@ -1,0 +1,4 @@
+sizeofres 27540928
+sizeofcount 22752
+computations complete in 308.77907967567444
+write results complete in 12.285611629486084 ; total time is 321.0646929740906

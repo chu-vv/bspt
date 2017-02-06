@@ -40,7 +40,7 @@ sc= SparkContext(sys.argv[1],sys.argv[2])
 #computations start time
 comp_start=time.time()
 
-data=sc.textFile("sflow-0118.csv")  #n  full test data sample dispatcher.netpoint-dc.com
+data=sc.textFile(sys.argv[3])#("sflow-0118.csv")  #n  full test data sample dispatcher.netpoint-dc.com
 #data=sc.textFile("one.csv")   #small sample of sflow data to debug
 #data=sc.textFile("large.csv")   #6gb sample
 
